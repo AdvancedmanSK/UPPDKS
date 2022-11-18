@@ -6,10 +6,13 @@
  * @version (a version number or a date)
  */
 public class Kvet {
-    /**
-     * Constructor for objects of class Kvet
-     */
-    public Kvet() {
-        // initialise instance variables
+    private int x;
+    private int y;
+    private Kruh kruh;
+    private Obdlznik obdl;
+    public Kvet(int x, int y) {
+        this.x = x;
+        this.y = y;
+        
     }
 }
