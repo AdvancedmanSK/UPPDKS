@@ -21,7 +21,8 @@ import java.io.File;
 import java.util.List;
 import java.util.HashMap;
 import java.util.ArrayList;
-
+import java.awt.Toolkit;
+import java.awt.Dimension;
 /**
  * Canvas is a class to allow for simple graphical drawing on a canvas.
  * This is a modification of the general purpose Canvas, specially made for
@@ -45,8 +46,11 @@ public class Platno {
      */
     public static Platno dajPlatno() {
         if (Platno.platnoSingleton == null) {
-            Platno.platnoSingleton = new Platno("BlueJ Shapes Demo", 300, 300, 
-                                         Color.white);
+            Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+            int vyska = (int)screenSize.getHeight();
+            int sirka = (int)screenSize.getWidth();
+            Platno.platnoSingleton = new Platno("Mravce hore dolu, lozia po byte", sirka/5*4, vyska/5*4, 
+                                         Color.GRAY);
         }
         Platno.platnoSingleton.setVisible(true);
         return Platno.platnoSingleton;
