@@ -19,9 +19,9 @@ public class Kvet {
     private Kruh lupienok7;
     private Kruh lupienok8;
     private Obdlznik stonka;
-    public Kvet() {  //int x, int y
-        this.x = 50;
-        this.y = 50;
+    public Kvet(int x, int y) {
+        this.x = x;
+        this.y = y;
         this.kvet = new Kruh();
         this.kvet2 = new Kruh();
         this.lupienok1 = new Kruh();
