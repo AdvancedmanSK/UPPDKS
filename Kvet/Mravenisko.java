@@ -4,9 +4,10 @@ public class Mravenisko {
     private Obdlznik spodok;
     private Obdlznik tyc;
     private Stvorec vlajka;
-    private int x, y;
+    private int x;
+    private int y;
     private String farba;
-      public Mravenisko(int x, int y, String farba) {
+    public Mravenisko(int x, int y, String farba) {
         this.telo = new Stvorec();
         this.hlava = new Elipsa();
         this.spodok = new Obdlznik();
@@ -15,7 +16,7 @@ public class Mravenisko {
         this.x = x;
         this.y = y;
         this.farba = farba;
-        poskladaj();
+        this.poskladaj();
     }
     
     public void poskladaj() {

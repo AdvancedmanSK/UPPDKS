@@ -3,7 +3,8 @@ public class Trava {
     private Trojuholnik trava1;
     private Trojuholnik trava2;
     private Trojuholnik trava3;
-    private int x, y;
+    private int x;
+    private int y;
     public Trava(int x, int y) {
         this.trava = new Trojuholnik();
         this.trava1 = new Trojuholnik();
@@ -11,7 +12,7 @@ public class Trava {
         this.trava3 = new Trojuholnik();
         this.x = x;
         this.y = y;
-        poskladaj();
+        this.poskladaj();
     }
     
     public void poskladaj() {
