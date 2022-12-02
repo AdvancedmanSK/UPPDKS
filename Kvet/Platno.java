@@ -49,7 +49,7 @@ public class Platno {
             Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
             int vyska = (int)screenSize.getHeight();
             int sirka = (int)screenSize.getWidth();
-            Platno.platnoSingleton = new Platno("Mravce hore dolu, lozia po byte", sirka/5*4, vyska/5*4, 
+            Platno.platnoSingleton = new Platno("Mravce hore dolu, lozia po byte", sirka / 5 * 4, vyska / 5 * 4, 
                                          Color.GRAY);
         }
         Platno.platnoSingleton.setVisible(true);
@@ -86,7 +86,7 @@ public class Platno {
                         File f = this.getSelectedFile();
                         if (f.exists() && this.getDialogType() == SAVE_DIALOG) {
                             int result = JOptionPane.showConfirmDialog(this, "The file exists, overwrite?", "Existing file", JOptionPane.YES_NO_CANCEL_OPTION);
-                            switch(result) {
+                            switch (result) {
                                 case JOptionPane.YES_OPTION:
                                     super.approveSelection();
                                     return;

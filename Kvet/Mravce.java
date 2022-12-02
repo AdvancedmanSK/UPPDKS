@@ -16,7 +16,8 @@ public class Mravce {
     private Obdlznik chrbat;
     private Obdlznik nohy1;
     private Obdlznik nohy2;
-    private int x, y;
+    private int x;
+    private int y;
     private String farba;
     public Mravce(int x, int y, String farba) {
         // initialise instance variables
@@ -30,7 +31,7 @@ public class Mravce {
         this.x = x;
         this.y = y;
         this.farba = farba;
-        zostroj();
+        this.zostroj();
     }
     public void zostroj() {
         this.nohy1.posunVodorovne(-8 + this.x);
